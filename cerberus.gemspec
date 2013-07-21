@@ -6,8 +6,8 @@ require 'cerberus/version'
 Gem::Specification.new do |spec|
   spec.name          = "cerberus"
   spec.version       = Cerberus::VERSION
-  spec.authors       = ["Onur Ozgur OZKAN"]
-  spec.email         = ["onur.ozgur.ozkan@lab2023.com"]
+  spec.authors       = ["lab2023"]
+  spec.email         = ["info@lab2023.com"]
   spec.description   = %q{TODO: Write a gem description}
   spec.summary       = %q{TODO: Write a gem summary}
   spec.homepage      = ""
