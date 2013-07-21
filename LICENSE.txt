@@ -1,4 +1,4 @@
-Copyright (c) 2013 Onur Ozgur OZKAN
+Copyright (c) 2013 lab2023 - internet technologies
 
 MIT License
 
