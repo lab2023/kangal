@@ -11,6 +11,10 @@ class SpecModel
     @attributes = attributes
   end
 
+  def read_attribute_for_validation(key)
+    @attributes[key]
+  end
+
 end
 
 #RSpec.configure do |config|
