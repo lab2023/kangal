@@ -1,7 +1,7 @@
 # Cerberus
 
-[![Code Climate](https://codeclimate.com/github/kebab-project/cybele.png)](https://codeclimate.com/github/kebab-project/cybele)
-[![Dependency Status](https://gemnasium.com/kebab-project/cybele.png)](https://gemnasium.com/kebab-project/cybele)
+[![Code Climate](https://codeclimate.com/github/kebab-project/cerberus.png)](https://codeclimate.com/github/kebab-project/cerberus)
+[![Dependency Status](https://gemnasium.com/kebab-project/cerberus.png)](https://gemnasium.com/kebab-project/cerberus)
 
 NOTE: Don't use this gem until v1.0.0
 
