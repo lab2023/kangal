@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 class User < SpecModel
-  validates :email, email_format: true
+  validates :email, email: true
 end
 
 describe 'Email format' do
