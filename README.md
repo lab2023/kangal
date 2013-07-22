@@ -16,11 +16,36 @@ Before generating your application, you will need:
 
 ## Usage
 
-First you should install the Cerberus gem than you can use it for validations.
+In your Gemfile
 
 ```ruby
-gem install cerberus
+gem 'cerberus'
 ```
+
+
+In your code
+
+```ruby
+require 'cerberus'
+class User
+  include ActiveModel::Validations
+  attr_accessor :email
+
+  validates :email, presence: :true, email: :true
+end
+
+
+p = User.new
+p.email = "info@lab2023.com"
+p.valid? # => true
+
+p.email = "info@lab"
+p.valid? # => false
+
+p.email = "Onur Ozgur <info@lab2023.com>"
+p.valid? # => false
+```
+
 
 ## Bugs and  Feedback
 
