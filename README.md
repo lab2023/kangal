@@ -2,6 +2,7 @@
 
 [![Code Climate](https://codeclimate.com/github/kebab-project/cerberus.png)](https://codeclimate.com/github/kebab-project/cerberus)
 [![Dependency Status](https://gemnasium.com/kebab-project/cerberus.png)](https://gemnasium.com/kebab-project/cerberus)
+[![Build Status](https://travis-ci.org/kebab-project/cerberus.png?branch=develop)](https://travis-ci.org/kebab-project/cerberus)
 
 NOTE: Don't use this gem until v1.0.0
 
