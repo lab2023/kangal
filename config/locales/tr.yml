@@ -1,0 +1,5 @@
+tr:
+  cerberus:
+    validations:
+      email:
+        invalid: 'geçersizdir.'

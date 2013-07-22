@@ -1,0 +1,5 @@
+en:
+  cerberus:
+    validations:
+      email:
+        invalid: 'is invalid'
