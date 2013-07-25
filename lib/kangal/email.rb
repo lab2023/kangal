@@ -21,7 +21,7 @@ class EmailValidator < ActiveModel::EachValidator
     rescue Exception => e
       r = false
     end
-    record.errors.add attribute, (options[:message] || I18n.t(:invalid, :scope => 'cerberus.validations.email')) unless r
+    record.errors.add attribute, (options[:message] || I18n.t(:invalid, :scope => 'kangal.validations.email')) unless r
   end
 
 end
