@@ -2,6 +2,7 @@
 #### [Current]
 
 #### 
+ * [bca3a4c](bca3a4c) add CHANGELOG.md __(Onur Ozgur OZKAN)__
  * [8a5dd69](8a5dd69) #7 add travis-ci flag to README.md __(Onur Ozgur OZKAN)__
  * [5a48bab](5a48bab) #2 fixed email format for spec __(Onur Ozgur OZKAN)__
  * [382d3d1](382d3d1) #7 add travis-ci service __(Onur Ozgur OZKAN)__
