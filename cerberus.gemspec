@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Cerberus::VERSION
   spec.authors       = ['lab2023', 'Onur Özgür ÖZKAN']
   spec.email         = %w(info@lab2023.com onur.ozgur.ozkan@lab2023.com)
-  spec.description   = %q{Write a gem description}
-  spec.summary       = %q{Write a gem summary}
+  spec.description   = %q{Cerberus brings you a nice set of custom validators for Rails 4.}
+  spec.summary       = %q{Cerberus brings you a nice set of custom validators for Rails 4.}
   spec.homepage      = 'https://github.com/kebab-project/cerberus'
   spec.license       = 'MIT'
 
