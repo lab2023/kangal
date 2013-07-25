@@ -1,12 +1,12 @@
-# Cerberus
+# Kangal
 
-[![Code Climate](https://codeclimate.com/github/kebab-project/cerberus.png)](https://codeclimate.com/github/kebab-project/cerberus)
-[![Dependency Status](https://gemnasium.com/kebab-project/cerberus.png)](https://gemnasium.com/kebab-project/cerberus)
-[![Build Status](https://travis-ci.org/kebab-project/cerberus.png?branch=develop)](https://travis-ci.org/kebab-project/cerberus)
+[![Code Climate](https://codeclimate.com/github/kebab-project/kangal.png)](https://codeclimate.com/github/kebab-project/kangal)
+[![Dependency Status](https://gemnasium.com/kebab-project/kangal.png)](https://gemnasium.com/kebab-project/kangal)
+[![Build Status](https://travis-ci.org/kebab-project/kangal.png?branch=develop)](https://travis-ci.org/kebab-project/kangal)
 
 NOTE: Don't use this gem until v1.0.0
 
-**Cerberus** /ˈsɜrbərəs/,[1] or Kerberos, (Greek form: Κέρβερος, [ˈkerberos])[2] in Greek and Roman mythology, is a multi-headed (usually three-headed) dog, or "hellhound" [1][3][4] which guards the gates of the Underworld, to prevent those who have crossed the river Styx from ever escaping.
+**Kangal**
 
 ## Requirements
 
@@ -20,14 +20,14 @@ Before generating your application, you will need:
 In your Gemfile
 
 ```ruby
-gem 'cerberus'
+gem 'kangal'
 ```
 
 
 In your code
 
 ```ruby
-require 'cerberus'
+require 'kangal'
 class User
   include ActiveModel::Validations
   attr_accessor :email
@@ -52,11 +52,11 @@ p.valid? # => false
 
 If you discover any bugs or want to drop a line, feel free to create an issue on GitHub.
 
-http://github.com/kebab-project/cerberus
+http://github.com/kebab-project/kangal
 
 ## Contributing
 
-Cerberus uses [TomDoc](http://tomdoc.org/), [rDoc](http://rubydoc.info/gems/cybele) and [SemVer](http://semver.org/), and takes it seriously.
+Kangal uses [TomDoc](http://tomdoc.org/), [rDoc](http://rubydoc.info/gems/kangal) and [SemVer](http://semver.org/), and takes it seriously.
 
 Once you've made your great commits:
 
@@ -68,8 +68,8 @@ Once you've made your great commits:
 
 ## Credits
 
-- Cerberus is maintained and funded by [lab2023 - internet technologies](http://lab2023.com/)
-- Thank you to all the [contributors!](https://github.com/kebab-project/cerberus/graphs/contributors)
+- Kangal is maintained and funded by [lab2023 - internet technologies](http://lab2023.com/)
+- Thank you to all the [contributors!](https://github.com/kebab-project/kangal/graphs/contributors)
 - The names and logos for lab2023 are trademarks of lab2023, inc.
 
 ## License

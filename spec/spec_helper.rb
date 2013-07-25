@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'bundler/setup'
 require 'active_model'
-require 'cerberus'
+require 'kangal'
 
 class SpecModel
 
