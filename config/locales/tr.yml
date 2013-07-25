@@ -1,5 +1,5 @@
 tr:
-  cerberus:
+  kangal:
     validations:
       email:
         invalid: 'geçersizdir.'
