@@ -1,29 +1,77 @@
 # Cerberus
 
-TODO: Write a gem description
+[![Code Climate](https://codeclimate.com/github/kebab-project/cerberus.png)](https://codeclimate.com/github/kebab-project/cerberus)
+[![Dependency Status](https://gemnasium.com/kebab-project/cerberus.png)](https://gemnasium.com/kebab-project/cerberus)
+[![Build Status](https://travis-ci.org/kebab-project/cerberus.png?branch=develop)](https://travis-ci.org/kebab-project/cerberus)
 
-## Installation
+NOTE: Don't use this gem until v1.0.0
 
-Add this line to your application's Gemfile:
+**Cerberus** /ˈsɜrbərəs/,[1] or Kerberos, (Greek form: Κέρβερος, [ˈkerberos])[2] in Greek and Roman mythology, is a multi-headed (usually three-headed) dog, or "hellhound" [1][3][4] which guards the gates of the Underworld, to prevent those who have crossed the river Styx from ever escaping.
 
-    gem 'cerberus'
+## Requirements
 
-And then execute:
+Before generating your application, you will need:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install cerberus
+* Ruby ~> 2.0
+* Rails ~> 4.0
 
 ## Usage
 
-TODO: Write usage instructions here
+In your Gemfile
+
+```ruby
+gem 'cerberus'
+```
+
+
+In your code
+
+```ruby
+require 'cerberus'
+class User
+  include ActiveModel::Validations
+  attr_accessor :email
+
+  validates :email, presence: :true, email: :true
+end
+
+
+p = User.new
+p.email = "info@lab2023.com"
+p.valid? # => true
+
+p.email = "info@lab"
+p.valid? # => false
+
+p.email = "Onur Ozgur <info@lab2023.com>"
+p.valid? # => false
+```
+
+
+## Bugs and  Feedback
+
+If you discover any bugs or want to drop a line, feel free to create an issue on GitHub.
+
+http://github.com/kebab-project/cerberus
 
 ## Contributing
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Cerberus uses [TomDoc](http://tomdoc.org/), [rDoc](http://rubydoc.info/gems/cybele) and [SemVer](http://semver.org/), and takes it seriously.
+
+Once you've made your great commits:
+
+1. Fork Template
+2. Create a topic branch - `git checkout -b my_branch`
+3. Push to your branch - `git push origin my_branch`
+4. Create a Pull Request from your branch
+5. That's it!
+
+## Credits
+
+- Cerberus is maintained and funded by [lab2023 - internet technologies](http://lab2023.com/)
+- Thank you to all the [contributors!](https://github.com/kebab-project/cerberus/graphs/contributors)
+- The names and logos for lab2023 are trademarks of lab2023, inc.
+
+## License
+
+Copyright 2012 lab2023 – internet technologies
