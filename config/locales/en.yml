@@ -3,3 +3,8 @@ en:
     validations:
       email:
         invalid: 'is invalid'
+      subdomain:
+        reserved: 'cannot be a reserved name'
+        character: 'must have between 3 and 63 letters'
+        hyphen: 'cannot start or end with a hyphen'
+        alphanumeric: 'must be alphanumeric; A-Z, 0-9 or hyphen'
