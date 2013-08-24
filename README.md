@@ -23,15 +23,14 @@ In your Gemfile
 gem 'kangal'
 ```
 
-
-In your code
-
+### Email Validator
 ```ruby
 require 'kangal'
 class User
   include ActiveModel::Validations
   attr_accessor :email
 
+  # Email validator
   validates :email, presence: :true, email: :true
 end
 
@@ -46,6 +45,43 @@ p.valid? # => false
 p.email = "Onur Ozgur <info@lab2023.com>"
 p.valid? # => false
 ```
+
+### Subdomain Validator
+```ruby
+require 'kangal'
+class User
+  include ActiveModel::Validations
+  attr_accessor :subdomain
+
+  # Subdomain validator
+  validates  :subdomain, subdomain: true
+
+  # Or
+  validates  :subdomain, subdomain: { :reserved => %w(foo bar) }
+end
+
+
+p = User.new
+p.subdomain = "wwww"
+p.valid? # => false
+
+p.subdomain = "https"
+p.valid? # => false
+
+p.subdomain = "-lab2023"
+p.valid? # => false
+
+p.subdomain = "-lab2023-"
+p.valid? # => false
+
+p.subdomain = "foo"
+p.valid? # => false
+
+p.email = "lab2023"
+p.valid? # => true
+```
+
+**Default reserved names:** www, ftp, mail, pop, smtp, admin, ssl, sftp, http, https
 
 
 ## Bugs and  Feedback

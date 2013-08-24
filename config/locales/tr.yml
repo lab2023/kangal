@@ -3,3 +3,8 @@ tr:
     validations:
       email:
         invalid: 'geçersizdir.'
+      subdomain:
+        reserved: 'bu isim alınamaz'
+        character: '3 ile 63 karakter arasında olmalıdır'
+        hyphen: 'tire ile başalayamaz veya bitemez'
+        alphanumeric: 'alfanümerik olmalıdır; A-Z, 0-9 veya tire'
