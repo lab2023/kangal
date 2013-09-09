@@ -62,7 +62,7 @@ end
 
 
 p = User.new
-p.subdomain = "wwww"
+p.subdomain = "www"
 p.valid? # => false
 
 p.subdomain = "https"
