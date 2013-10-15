@@ -4,8 +4,6 @@
 [![Dependency Status](https://gemnasium.com/kebab-project/kangal.png)](https://gemnasium.com/kebab-project/kangal)
 [![Build Status](https://travis-ci.org/kebab-project/kangal.png?branch=develop)](https://travis-ci.org/kebab-project/kangal)
 
-NOTE: Don't use this gem until v1.0.0
-
 **Kangal**
 
 ## Requirements
