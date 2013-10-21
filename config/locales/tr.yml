@@ -8,3 +8,5 @@ tr:
         character: '3 ile 63 karakter arasında olmalıdır'
         hyphen: 'tire ile başalayamaz veya bitemez'
         alphanumeric: 'alfanümerik olmalıdır; A-Z, 0-9 veya tire'
+      identity_number:
+        invalid: 'geçersizdir.'

@@ -8,3 +8,5 @@ en:
         character: 'must have between 3 and 63 letters'
         hyphen: 'cannot start or end with a hyphen'
         alphanumeric: 'must be alphanumeric; A-Z, 0-9 or hyphen'
+      identity_number:
+        invalid: 'is invalid.'
