@@ -4,9 +4,6 @@
 [![Dependency Status](https://gemnasium.com/kebab-project/kangal.png)](https://gemnasium.com/kebab-project/kangal)
 [![Build Status](https://travis-ci.org/kebab-project/kangal.png?branch=develop)](https://travis-ci.org/kebab-project/kangal)
 
-NOTE: Don't use this gem until v1.0.0
-
-**Kangal**
 
 ## Requirements
 
@@ -62,7 +59,7 @@ end
 
 
 p = User.new
-p.subdomain = "wwww"
+p.subdomain = "www"
 p.valid? # => false
 
 p.subdomain = "https"
@@ -77,12 +74,59 @@ p.valid? # => false
 p.subdomain = "foo"
 p.valid? # => false
 
-p.email = "lab2023"
+p.subdomain = "lab2023"
 p.valid? # => true
 ```
 
 **Default reserved names:** www, ftp, mail, pop, smtp, admin, ssl, sftp, http, https
 
+## Turkish Government Identity Number Validator
+```ruby
+require 'kangal'
+class User
+  include ActiveModel::Validations
+  attr_accessor :identity
+
+  # Identity Number validator
+  validates :email, presence: :true, identity_number: :true
+end
+
+p = User.new
+p.identity = "44234234"
+p.valid? # => false
+
+p = User.new
+p.identity = "02343214582"
+p.valid? # => false
+
+p = User.new
+p.identity = "83317527040" # (this isn't a real identity number)
+p.valid? # => true
+```
+
+## Turkish Government Tax Number Validator
+```ruby
+require 'kangal'
+class User
+  include ActiveModel::Validations
+  attr_accessor :tax_number
+
+  # Identity Number validator
+  validates :tax_number, presence: :true, tax_number: :true
+end
+
+p = User.new
+p.tax_number = "44234234"
+p.valid? # => false
+
+p = User.new
+p.tax_number = "02343214582"
+p.valid? # => false
+
+p = User.new
+p.tax_number = "6120069217" # (this isn't a real tax number)
+p.valid? # => true
+```
 
 ## Bugs and  Feedback
 
