@@ -74,7 +74,7 @@ p.valid? # => false
 p.subdomain = "foo"
 p.valid? # => false
 
-p.email = "lab2023"
+p.subdomain = "lab2023"
 p.valid? # => true
 ```
 
