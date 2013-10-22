@@ -1,5 +1,10 @@
 
 #### [Current]
+ * [b34a9df](../../commit/b34a9df) - __(hamitturkukaya)__ [#11](../../issues/11) Turkish Government Tax Number for company validation implemented
+ * [22f50ed](../../commit/22f50ed) - __(hamitturkukaya)__ [#12](../../issues/12) Turkish Government Identity Number validation
+
+- Readme.md an Changelog.md updated
+
  * [a194920](../../commit/a194920) - __(hamitturkukaya)__ [#12](../../issues/12) Turkish Government Identity Number validation
 
 - New validation method added

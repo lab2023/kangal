@@ -13,9 +13,8 @@ class IdentityNumberValidator < ActiveModel::EachValidator
     else
       valid = false
     end
-    unless valid
-      record.errors.add attribute, (options[:message] || I18n.t(:invalid, :scope => 'kangal.validations.identity_number'))
-    end
+
+    record.errors.add attribute, (options[:message] || I18n.t(:invalid, :scope => 'kangal.validations.identity_number')) unless valid
   end
 
   private
