@@ -9,6 +9,7 @@ class IdentityNumberValidator < ActiveModel::EachValidator
     if val.size == 11 && val[0].to_i != 0
       valid = check_tenth_character(val)
       valid = check_eleventh_character(val)
+      valid = double_check_eleventh_character(val)
     else
       valid = false
     end
@@ -38,7 +39,17 @@ class IdentityNumberValidator < ActiveModel::EachValidator
         even_sum += val[counter].to_i
       end
     end
-    val[9].to_i == ((odd_sum*7 - even_sum)%10)
+    val[9].to_i == ((odd_sum*7 + even_sum*9)%10)
+  end
+
+  def double_check_eleventh_character(val)
+    sum = 0
+    (0..8).each do |counter|
+      if counter.even?
+        sum += val[counter].to_i
+      end
+    end
+    val[10].to_i == ((sum*8)%10)
   end
 
 end

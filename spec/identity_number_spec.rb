@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-class User < SpecModel
+class Profile < SpecModel
   validates :identity, identity_number: true
 end
 
@@ -11,14 +11,14 @@ describe 'Identity number format' do
   end
 
   let(:valid_identity_numbers) do
-    %w(45641002990)
+    %w(21432692144 55679901158 83317527040)
   end
 
   it 'should be invalid' do
-    invalid_identity_numbers.each { |identity|  User.new(identity: identity).valid?.should be_false }
+    invalid_identity_numbers.each { |identity|  Profile.new(identity: identity).valid?.should be_false }
   end
 
   it 'should be valid' do
-    valid_identity_numbers.each { |identity| User.new(identity: identity).valid?.should be_true }
+    valid_identity_numbers.each { |identity| Profile.new(identity: identity).valid?.should be_true }
   end
 end
