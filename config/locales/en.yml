@@ -10,3 +10,5 @@ en:
         alphanumeric: 'must be alphanumeric; A-Z, 0-9 or hyphen'
       identity_number:
         invalid: 'is invalid.'
+      tax_number:
+        invalid: 'is invalid.'
