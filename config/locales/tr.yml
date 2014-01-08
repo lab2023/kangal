@@ -12,3 +12,5 @@ tr:
         invalid: 'geçersizdir.'
       tax_number:
         invalid: 'geçersizdir.'
+      ip:
+        invalid: 'geçersizdir.'

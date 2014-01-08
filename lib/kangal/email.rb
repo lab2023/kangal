@@ -4,7 +4,7 @@ require 'mail'
 
 class EmailValidator < ActiveModel::EachValidator
 
-  def validate_each(record, attribute, value)
+  def validate_each(object, attribute, value)
     # takes from https://github.com/hallelujah/valid_email/blob/master/lib/valid_email/email_validator.rb
     begin
       m = Mail::Address.new(value)
@@ -21,7 +21,7 @@ class EmailValidator < ActiveModel::EachValidator
     rescue Exception => e
       r = false
     end
-    record.errors.add attribute, (options[:message] || I18n.t(:invalid, :scope => 'kangal.validations.email')) unless r
+    object.errors.add attribute, (options[:message] || I18n.t(:invalid, :scope => 'kangal.validations.email')) unless r
   end
 
 end

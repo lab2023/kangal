@@ -7,7 +7,7 @@ end
 describe 'Subdomain format' do
 
   let(:invalid_subdomains) do
-    %w(-lab2023 https, ab)
+    %w(-lab2023 https ab)
   end
 
   let(:valid_subdomains) do
