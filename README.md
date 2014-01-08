@@ -128,6 +128,34 @@ p.tax_number = "6120069217" # (this isn't a real tax number)
 p.valid? # => true
 ```
 
+## IP Validator
+```ruby
+require 'kangal'
+class Server
+  include ActiveModel::Validations
+  attr_accessor :ip
+
+  # Ip validator
+  validates :ip, presence: :true, ip: :true
+end
+
+p = Server.new
+p.ip = "10.10.10.256"
+p.valid? # => false
+
+p = Server.new
+p.ip = "2222.22.22.22"
+p.valid? # => false
+
+p = Server.new
+p.ip = "255.255.255.255"
+p.valid? # => true
+
+p = Server.new
+p.ip = "132.254.111.10"
+p.valid? # => true
+```
+
 ## Bugs and  Feedback
 
 If you discover any bugs or want to drop a line, feel free to create an issue on GitHub.
