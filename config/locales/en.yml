@@ -1,6 +1,8 @@
 en:
   kangal:
     validations:
+      common:
+        invalid: 'is invalid'
       email:
         invalid: 'is invalid'
       subdomain:
@@ -12,5 +14,7 @@ en:
         invalid: 'is invalid.'
       tax_number:
         invalid: 'is invalid.'
-      tax_number:
+      ip:
         invalid: 'is invalid.'
+      phone:
+        tr: 'should be start with 90'

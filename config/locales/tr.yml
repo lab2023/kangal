@@ -1,6 +1,8 @@
 tr:
   kangal:
     validations:
+      common:
+        invalid: 'geçersizdir.'
       email:
         invalid: 'geçersizdir.'
       subdomain:
@@ -14,3 +16,5 @@ tr:
         invalid: 'geçersizdir.'
       ip:
         invalid: 'geçersizdir.'
+      phone:
+        tr: '90 ile başlaması lazım.'

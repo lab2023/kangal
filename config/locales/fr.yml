@@ -1,6 +1,8 @@
 en:
   kangal:
     validations:
+      common:
+        invalid: 'est invalide'
       email:
         invalid: 'est invalide'
       subdomain:
@@ -14,3 +16,5 @@ en:
         invalid: 'est invalide.'
       ip:
         invalid: 'est invalide.'
+      phone:
+        tr: '90 ile başlaması lazım.'
