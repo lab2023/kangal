@@ -2,16 +2,18 @@ require 'active_model'
 require 'active_model/validations'
 
 class IdentityNumberValidator < ActiveModel::EachValidator
-
   def validate_each(record, attribute, value)
-    valid = true
+
+    return if options[:allow_nil] && value.nil?
+    return if options[:allow_blank] && value.blank?
+
+    valid = false
     val = value.to_s
+
     if val.size == 11 && val[0].to_i != 0
       valid = check_tenth_character(val)
       valid = check_eleventh_character(val)
       valid = double_check_eleventh_character(val)
-    else
-      valid = false
     end
 
     record.errors.add attribute, (options[:message] || I18n.t(:invalid, :scope => 'kangal.validations.identity_number')) unless valid

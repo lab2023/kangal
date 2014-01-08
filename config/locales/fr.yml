@@ -12,3 +12,5 @@ en:
         invalid: 'est invalide.'
       tax_number:
         invalid: 'est invalide.'
+      ip:
+        invalid: 'est invalide.'

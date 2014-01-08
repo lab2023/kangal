@@ -12,3 +12,5 @@ en:
         invalid: 'is invalid.'
       tax_number:
         invalid: 'is invalid.'
+      tax_number:
+        invalid: 'is invalid.'
