@@ -6,13 +6,8 @@ end
 
 describe 'Email format' do
 
-  let(:invalid_emails) do
-    %w(invalid email)
-  end
-
-  let(:valid_emails) do
-    %w(info@lab2023.com abc@ab.com)
-  end
+  let(:invalid_emails) { %w(invalid email) }
+  let(:valid_emails)   { %w(info@lab2023.com abc@ab.com) }
 
   it 'should be invalid' do
     invalid_emails.each { |email|  User.new(email: email).valid?.should be_false }

@@ -16,7 +16,3 @@ class SpecModel
   end
 
 end
-
-#RSpec.configure do |config|
-#
-#end
