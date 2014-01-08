@@ -5,6 +5,10 @@ require 'mail'
 class EmailValidator < ActiveModel::EachValidator
 
   def validate_each(object, attribute, value)
+
+    return if options[:allow_nil] && value.nil?
+    return if options[:allow_blank] && value.blank?
+
     begin
       m = Mail::Address.new(value)
       r = m.domain && m.address == value

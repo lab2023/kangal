@@ -6,10 +6,11 @@ class SubdomainValidator < ActiveModel::EachValidator
 
     return if options[:allow_nil] && value.nil?
     return if options[:allow_blank] && value.blank?
-
     return unless value.present?
+
     reserved_names = %w(www ftp mail pop smtp admin ssl sftp http https)
     reserved_names = options[:reserved] if options[:reserved]
+
     if reserved_names.include?(value)
       object.errors[attribute] << I18n.t(:reserved, scope: 'kangal.validations.subdomain')
     end
