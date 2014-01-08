@@ -2,9 +2,12 @@ require 'active_model'
 require 'active_model/validations'
 
 class TaxNumberValidator < ActiveModel::EachValidator
+  def validate_each(object, attribute, value)
 
-  def validate_each(record, attribute, value)
-    valid = true
+    return if options[:allow_nil] && value.nil?
+    return if options[:allow_blank] && value.blank?
+
+    valid = false
     val = value.to_s
     if val.size == 10
       val1 = Array.new
@@ -37,9 +40,8 @@ class TaxNumberValidator < ActiveModel::EachValidator
 
       valid = (sum == last_digit)
 
-    else
-      valid = false
     end
-    record.errors.add attribute, (options[:message] || I18n.t(:invalid, :scope => 'kangal.validations.tax_number')) unless valid
+
+    object.errors.add attribute, (options[:message] || I18n.t(:invalid, :scope => 'kangal.validations.tax_number')) unless valid
   end
 end
