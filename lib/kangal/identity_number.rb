@@ -4,6 +4,8 @@ require 'active_model/validations'
 class IdentityNumberValidator < ActiveModel::EachValidator
   def validate_each(record, attribute, value)
 
+    ActiveSupport::Deprecation.warn "`identity_number: :true` is deprecated and may be removed from future releases, use `tckn: true` instead.", caller
+
     return if options[:allow_nil] && value.nil?
     return if options[:allow_blank] && value.blank?
 

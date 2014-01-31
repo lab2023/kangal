@@ -12,7 +12,11 @@ tr:
         alphanumeric: 'alfanümerik olmalıdır; A-Z, 0-9 veya tire'
       identity_number:
         invalid: 'geçersizdir.'
+      tckn:
+        invalid: 'geçersizdir.'
       tax_number:
+        invalid: 'geçersizdir.'
+      tcvkn:
         invalid: 'geçersizdir.'
       ip:
         invalid: 'geçersizdir.'

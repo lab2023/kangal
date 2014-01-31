@@ -88,7 +88,7 @@ class User
   attr_accessor :identity
 
   # Identity Number validator
-  validates :email, presence: :true, identity_number: :true
+  validates :email, presence: :true, tcno: :true
 end
 
 p = User.new
@@ -112,7 +112,7 @@ class User
   attr_accessor :tax_number
 
   # Identity Number validator
-  validates :tax_number, presence: :true, tax_number: :true
+  validates :tax_number, presence: :true, tcvkn: :true
 end
 
 p = User.new

@@ -1,6 +1,7 @@
 require 'active_model'
 require 'active_model/validations'
 
+# All phones number should be store e.164 format standard
 class PhoneValidator < ActiveModel::EachValidator
   def validate_each(object, attribute, value)
 
