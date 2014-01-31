@@ -1,6 +1,8 @@
 tr:
   kangal:
     validations:
+      common:
+        invalid: 'geçersizdir.'
       email:
         invalid: 'geçersizdir.'
       subdomain:
@@ -10,7 +12,13 @@ tr:
         alphanumeric: 'alfanümerik olmalıdır; A-Z, 0-9 veya tire'
       identity_number:
         invalid: 'geçersizdir.'
+      tckn:
+        invalid: 'geçersizdir.'
       tax_number:
+        invalid: 'geçersizdir.'
+      tcvkn:
         invalid: 'geçersizdir.'
       ip:
         invalid: 'geçersizdir.'
+      phone:
+        tr: '90 ile başlaması lazım.'

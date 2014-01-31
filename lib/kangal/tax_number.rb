@@ -4,6 +4,8 @@ require 'active_model/validations'
 class TaxNumberValidator < ActiveModel::EachValidator
   def validate_each(object, attribute, value)
 
+    ActiveSupport::Deprecation.warn "`tax_number: :true` is deprecated and may be removed from future releases, use `tcvkn: true` instead.", caller
+
     return if options[:allow_nil] && value.nil?
     return if options[:allow_blank] && value.blank?
 

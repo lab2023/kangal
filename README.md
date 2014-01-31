@@ -80,7 +80,7 @@ p.valid? # => true
 
 **Default reserved names:** www, ftp, mail, pop, smtp, admin, ssl, sftp, http, https
 
-## Turkish Government Identity Number Validator
+### Turkish Government Identity Number Validator
 ```ruby
 require 'kangal'
 class User
@@ -88,7 +88,7 @@ class User
   attr_accessor :identity
 
   # Identity Number validator
-  validates :email, presence: :true, identity_number: :true
+  validates :email, presence: :true, tcno: :true
 end
 
 p = User.new
@@ -104,7 +104,7 @@ p.identity = "83317527040" # (this isn't a real identity number)
 p.valid? # => true
 ```
 
-## Turkish Government Tax Number Validator
+### Turkish Government Tax Number Validator
 ```ruby
 require 'kangal'
 class User
@@ -112,7 +112,7 @@ class User
   attr_accessor :tax_number
 
   # Identity Number validator
-  validates :tax_number, presence: :true, tax_number: :true
+  validates :tax_number, presence: :true, tcvkn: :true
 end
 
 p = User.new
@@ -125,6 +125,34 @@ p.valid? # => false
 
 p = User.new
 p.tax_number = "6120069217" # (this isn't a real tax number)
+p.valid? # => true
+```
+
+### IP Validator
+```ruby
+require 'kangal'
+class Server
+  include ActiveModel::Validations
+  attr_accessor :ip
+
+  # Ip validator
+  validates :ip, presence: :true, ip: :true
+end
+
+p = Server.new
+p.ip = "10.10.10.256"
+p.valid? # => false
+
+p = Server.new
+p.ip = "2222.22.22.22"
+p.valid? # => false
+
+p = Server.new
+p.ip = "255.255.255.255"
+p.valid? # => true
+
+p = Server.new
+p.ip = "132.254.111.10"
 p.valid? # => true
 ```
 

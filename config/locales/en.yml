@@ -1,6 +1,8 @@
 en:
   kangal:
     validations:
+      common:
+        invalid: 'is invalid'
       email:
         invalid: 'is invalid'
       subdomain:
@@ -10,7 +12,13 @@ en:
         alphanumeric: 'must be alphanumeric; A-Z, 0-9 or hyphen'
       identity_number:
         invalid: 'is invalid.'
-      tax_number:
+      tckn:
         invalid: 'is invalid.'
       tax_number:
         invalid: 'is invalid.'
+      tcvkn:
+        invalid: 'is invalid.'
+      ip:
+        invalid: 'is invalid.'
+      phone:
+        tr: 'should be start with 90'
