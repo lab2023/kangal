@@ -80,7 +80,7 @@ p.valid? # => true
 
 **Default reserved names:** www, ftp, mail, pop, smtp, admin, ssl, sftp, http, https
 
-## Turkish Government Identity Number Validator
+### Turkish Government Identity Number Validator
 ```ruby
 require 'kangal'
 class User
@@ -104,7 +104,7 @@ p.identity = "83317527040" # (this isn't a real identity number)
 p.valid? # => true
 ```
 
-## Turkish Government Tax Number Validator
+### Turkish Government Tax Number Validator
 ```ruby
 require 'kangal'
 class User
@@ -128,7 +128,7 @@ p.tax_number = "6120069217" # (this isn't a real tax number)
 p.valid? # => true
 ```
 
-## IP Validator
+### IP Validator
 ```ruby
 require 'kangal'
 class Server
