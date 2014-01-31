@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 class Profile < SpecModel
-  validates :identity, tckno: true
+  validates :identity, tckn: true
 end
 
 describe 'Tckn number format' do
