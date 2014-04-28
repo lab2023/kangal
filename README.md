@@ -88,7 +88,7 @@ class User
   attr_accessor :identity
 
   # Identity Number validator
-  validates :identity, presence: :true, tcno: :true
+  validates :identity, presence: :true, identity_number: :true
 end
 
 p = User.new
