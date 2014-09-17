@@ -2,7 +2,7 @@
 
 [![Code Climate](https://codeclimate.com/github/kebab-project/kangal.png)](https://codeclimate.com/github/kebab-project/kangal)
 [![Dependency Status](https://gemnasium.com/kebab-project/kangal.png)](https://gemnasium.com/kebab-project/kangal)
-[![Build Status](https://travis-ci.org/kebab-project/kangal.png?branch=develop)](https://travis-ci.org/kebab-project/kangal)
+[![Build Status](https://travis-ci.org/lab2023/kangal.png?branch=develop)](https://travis-ci.org/kebab-project/kangal)
 
 
 ## Requirements
