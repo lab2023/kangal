@@ -1,0 +1,24 @@
+ja:
+  kangal:
+    validations:
+      common:
+        invalid: 'は不正な値です'
+      email:
+        invalid: 'は不正な値です'
+      subdomain:
+        reserved: 'は予約語のため使用できません'
+        character: 'は3文字以上63文字以内で入力してください'
+        hyphen: 'は頭文字にハイフン、または末尾にハイフンがあるため使用できません'
+        alphanumeric: 'は半角英数（AからZ、0から9）とハイフン（-）の組み合わせで入力してください'
+      identity_number:
+        invalid: 'は不正な値です'
+      tckn:
+        invalid: 'は不正な値です'
+      tax_number:
+        invalid: 'は不正な値です'
+      tcvkn:
+        invalid: 'は不正な値です'
+      ip:
+        invalid: 'は不正な値です'
+      phone:
+        tr: 'は90で始まる値を入力してください'
