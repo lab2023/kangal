@@ -10,10 +10,10 @@ describe 'tax number format' do
   let(:valid_tcvkn)  { %w(2640020928 6120069217) }
 
   it 'should be invalid' do
-    invalid_tcvkn.each { |tax|  CompanyDetail.new(tax: tax).valid?.should be_false }
+    invalid_tcvkn.each { |tax| expect( CompanyDetail.new(tax: tax).valid?).to be false }
   end
 
   it 'should be valid' do
-    valid_tcvkn.each { |tax| CompanyDetail.new(tax: tax).valid?.should be_true }
+    valid_tcvkn.each { |tax| expect(CompanyDetail.new(tax: tax).valid?).to be true }
   end
 end

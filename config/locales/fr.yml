@@ -21,4 +21,4 @@ en:
       ip:
         invalid: 'est invalide.'
       phone:
-        tr: '90 ile başlaması lazım.'
+        tr: 'devrait commencer par 90'

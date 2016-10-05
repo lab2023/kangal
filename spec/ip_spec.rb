@@ -34,11 +34,11 @@ describe 'Ip format' do
   end
 
   it 'should be invalid' do
-    invalid_ips.each { |ip|  Server.new(ip: ip).valid?.should be_false }
+    invalid_ips.each { |ip|  expect(Server.new(ip: ip).valid?).to be false }
   end
 
   it 'should be valid' do
-    valid_ips.each { |ip|  Server.new(ip: ip).valid?.should be_true }
+    valid_ips.each { |ip|  expect(Server.new(ip: ip).valid?).to be true }
   end
 
 end

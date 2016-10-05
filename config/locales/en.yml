@@ -21,4 +21,4 @@ en:
       ip:
         invalid: 'is invalid.'
       phone:
-        tr: 'should be start with 90'
+        tr: 'should start with 90'

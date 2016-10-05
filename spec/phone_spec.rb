@@ -34,11 +34,11 @@ describe 'Phone format' do
   end
 
   it 'should be valid' do
-    valid_phone.each { |number| Phone.new(number: number).valid?.should be_true }
+    valid_phone.each { |number| expect(Phone.new(number: number).valid?).to be true }
   end
 
   it 'should be invalid' do
-    invalid_phone.each { |number| Phone.new(number: number).valid?.should be_false }
+    invalid_phone.each { |number| expect(Phone.new(number: number).valid?).to be false }
   end
 
   let(:valid_tr) do
@@ -56,11 +56,11 @@ describe 'Phone format' do
   end
 
   it 'should be valid with tr option' do
-    valid_tr.each { |tr_phone| PhoneTr.new(number: tr_phone).valid?.should be_true }
+    valid_tr.each { |tr_phone| expect(PhoneTr.new(number: tr_phone).valid?).to be true }
   end
 
   it 'should be invalid with tr option' do
-    invalid_tr.each { |tr_phone| PhoneTr.new(number: tr_phone).valid?.should be_false }
+    invalid_tr.each { |tr_phone| expect(PhoneTr.new(number: tr_phone).valid?).to be false }
   end
 
   it 'should be valid with tr and mobile option' do
