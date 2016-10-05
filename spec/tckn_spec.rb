@@ -10,10 +10,10 @@ describe 'Tckn number format' do
   let(:valid_tckn)    { %w(21432692144 55679901158 83317527040) }
 
   it 'should be invalid' do
-    invalid_tckn.each { |identity|  Profile.new(identity: identity).valid?.should be_false }
+    invalid_tckn.each { |identity|  expect(Profile.new(identity: identity).valid?).to be false }
   end
 
   it 'should be valid' do
-    valid_tckn.each { |identity| Profile.new(identity: identity).valid?.should be_true }
+    valid_tckn.each { |identity| expect(Profile.new(identity: identity).valid?).to be true }
   end
 end
